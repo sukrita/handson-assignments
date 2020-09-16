@@ -16,7 +16,7 @@ balance=0.0f;
 
 }
 
-Savings(int accountNo, int balance, String name, String state, String city, String pin){
+Savings(int accountNo, int balance, String name, String state, String city, int pin){
 this.accountNo=accountNo;
 this.balance=balance;
 this.name=name;
@@ -40,7 +40,7 @@ System.out.println("--------------------------------------------");
 }
 
 void withdraw(float cash){
-if((balance-cash)==0.0){
+if((balance-cash)<=0.0){
 	System.out.println("--------------------------------------------");
 	System.out.println("Sorry not enough cash");
 	System.out.println("--------------------------------------------");
