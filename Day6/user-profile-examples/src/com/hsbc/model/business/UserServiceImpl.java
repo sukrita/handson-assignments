@@ -11,7 +11,7 @@ public class UserServiceImpl implements UserService {
 	private UserDao dao;
 	public UserServiceImpl() {
 		// this is the way you get different instance
-		dao = (UserDao)UserFactory.getInstance(Type.DAO);
+		dao = (UserDao)UserFactory.getInstance(Type.FILEDAO);
 	}
 	@Override
 	public User storeUser(User user) {

@@ -3,6 +3,7 @@ package com.hsbc.model.utility;
 import com.hsbc.model.business.UserServiceImpl;
 import com.hsbc.model.dao.ArrayBackedUserDao;
 import com.hsbc.model.dao.CollectionBackedArrayUserDao;
+import com.hsbc.model.dao.FileBackedUserDao;
 
 
 public class UserFactory {
@@ -20,6 +21,9 @@ public class UserFactory {
 			break;
 		case COLDAO :
 			obj = new CollectionBackedArrayUserDao();
+			break;
+		case FILEDAO :
+			obj = new FileBackedUserDao();
 			break;
 		}
 		return obj;

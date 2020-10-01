@@ -1,6 +1,8 @@
 package com.hsbc.model.beans;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable{
 	private int userId;
 	private String name;
 	private String password;
