@@ -29,6 +29,7 @@ public class MainViewController {
 			option = scanner.nextInt();
 			switch(option) {
 			case 1: 
+				//switch case 1 
 				Account account = new Account();
 				System.out.println("Enter Name");		
 				account.setCustomerName(scanner.next());
